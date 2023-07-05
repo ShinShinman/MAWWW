@@ -1,7 +1,7 @@
 {
 	"name": "mawebsite",
-	"version": "4.2.0",
-	"description": "Kolekcja – drugie poprawki MA",
+	"version": "4.2.1",
+	"description": "Kolekcja – ładowanie obrazków w lightboxie",
 	"author": "Olaf Schindler",
 	"license": "MIT",
 	"repository": "https://github.com/ShinShinman/MAWWW.git",
@@ -18,10 +18,10 @@
 		"gulp-include": "^2.4.1",
 		"gulp-rename": "^1.4.0",
 		"gulp-replace": "^1.0.0",
-		"gulp-sass": "^4.1.0",
+		"gulp-sass": "^5.1.0",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-terser": "^1.4.1",
 		"jquery-lazyload": "^1.9.7",
-		"node-sass": "^5.0.0"
+		"node-sass": "^9.0.0"
 	}
 }

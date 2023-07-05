@@ -177,7 +177,9 @@
 <xsl:template match="obrazy/item" mode="lightbox">
 	<div class="swiper-slide">
 		<div class="swiper-zoom-container">
-			<img src="{$workspace}/images/blank.gif" data-src="http://ma.wroc.pl/workspace/t.php?link={obraz/data/asset-url}" class="swiper-lazy">
+			<img src="http://ma.wroc.pl/workspace/t.php?link={obraz/data/asset-url}" 
+				loading="lazy"
+				class="swiper-lazy">
 				<!-- <xsl:attribute name="alt">
 					<xsl:apply-templates select="." mode="alt" />
 				</xsl:attribute> -->
