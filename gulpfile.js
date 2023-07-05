@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const cleanCss = require('gulp-clean-css');
@@ -12,7 +12,7 @@ const terser = require('gulp-terser');
 
 const packageInfo = require('./package.json');
 
-sass.compiler = require('node-sass');
+// sass.compiler = require('node-sass');
 
 function styles() {
 	return gulp.src('./scss/main.scss')
