@@ -39,7 +39,7 @@
 			<xsl:apply-templates select="edu-educational-aid/entry" />
 		</xsl:otherwise>
 	</xsl:choose>
-	<xsl:apply-templates select="edu-aid" />
+	<!-- <xsl:apply-templates select="edu-aid" /> -->
 </xsl:template>
 
 <xsl:template match="edu-one-aid/entry">

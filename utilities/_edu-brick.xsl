@@ -21,7 +21,7 @@
 				<xsl:when test="../section/@handle = 'edu-workshops'">
 					<xsl:call-template name="workshops" />
 				</xsl:when>
-				<xsl:when test="../section/@handle = 'edu-lectures'">
+				<xsl:when test="../section/@handle = 'edu-lectures'"> <!-- na stronie Dorośli i młodzież (adults.xsl) -->
 					<xsl:call-template name="lectures" />
 				</xsl:when>
 			</xsl:choose>
@@ -73,7 +73,7 @@
 	</xsl:template>
 
 	<xsl:template name="lectures">
-		<a href="{$root}/{title/@lang}/{//dictionary/entry/word[@handle-pl = 'edukacja']}/dorosli/{title/@handle}">
+		<a href="{$root}/{title/@lang}/{//dictionary/entry/word[@handle-pl = 'edukacja']}/dorosli-i-mlodziez/{title/@handle}">
 			<h1 class="donthyphenate"><xsl:value-of select="title" /></h1>
 			<p class="category">Edukacja</p>
 			<xsl:apply-templates select="./date" />

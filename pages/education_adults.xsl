@@ -92,8 +92,8 @@
 <xsl:template match="edu-lectures">
 	<section class="edu-items">
 		<header>
-			<h1><xsl:value-of select="//dictionary/entry/word[@handle-pl = 'najblizsze-wyklady-i-spotkania']" /></h1>
-			<xsl:choose>
+			<h1><xsl:value-of select="//dictionary/entry/word[@handle-pl = 'najblizsze-wyklady-i-spotkania']" /></h1> <!-- Tu jest nagłówek -->
+			<!-- <xsl:choose>
 				<xsl:when test="entry">
 					<ul class="edu-categories filters">
 						<li class="label"><xsl:value-of select="//dictionary/entry/word[@handle-pl = 'filtry']" />:</li>
@@ -103,7 +103,10 @@
 				<xsl:otherwise>
 					<p><xsl:value-of select="//dictionary/entry/word[@handle-pl = 'brak-aktualnych-wykladow']" /></p>
 				</xsl:otherwise>
-			</xsl:choose>
+			</xsl:choose> -->
+			<xsl:if test="not(entry)">
+				<p><xsl:value-of select="//dictionary/entry/word[@handle-pl = 'brak-aktualnych-wykladow']" /></p>
+			</xsl:if>
 		</header>
 		<div class="bricks-container">
 			<xsl:apply-templates select="./entry[title/@handle != $title]" />
@@ -116,7 +119,7 @@
 </xsl:template>
 
 <xsl:template match="edu-lectures/entry">
-	<xsl:call-template name="edu-brick" />
+	<xsl:call-template name="edu-brick" /> <!-- Edytować utilities/edu-brick .xls -->
 </xsl:template>
 
 <xsl:template match="data" mode="ma-button">
