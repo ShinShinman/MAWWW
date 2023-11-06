@@ -1,7 +1,7 @@
 {
 	"name": "mawebsite",
-	"version": "4.2.1",
-	"description": "Kolekcja – ładowanie obrazków w lightboxie",
+	"version": "4.2.2",
+	"description": "Kolekcja – usunięto blokowanie pobierania obrazków",
 	"author": "Olaf Schindler",
 	"license": "MIT",
 	"repository": "https://github.com/ShinShinman/MAWWW.git",
